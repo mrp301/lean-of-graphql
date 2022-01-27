@@ -1,0 +1,11 @@
+{
+  "editor.formatOnSave": true, // prettierで整形
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true // eslintでリント
+  },
+  // デフォルトフォーマッタをprettierに
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "extensions.ignoreRecommendations": false,
+  "editor.renderWhitespace": "all", // 半角スペースを常に表示
+  "editor.renderControlCharacters": true
+}

@@ -1,0 +1,11 @@
+[*]
+
+root = true
+indent_style = space
+indent_size = 2
+
+# 文末スペースの設定（true=削除）
+trim_trailing_whitespace = true
+
+# 最終行の改行設定（true=改行あり）
+insert_final_newline = true
