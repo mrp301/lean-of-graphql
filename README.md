@@ -1,3 +1,18 @@
+## 用語
+
+### relay-compiler
+
+テンプレートリテラルで書いた GraphQL を`relay-runtime`上で実行可能な形式に変換してくれる。
+
+## relay-runtime
+
+実際にリクエストを実行しているクライアント。
+フェッチ、読み取り、正規化を担当する。
+
+## relay-react
+
+React 上で`relay-runtime`使えるようにしてる。
+
 ## 基本構文
 
 ```ts
@@ -6,11 +21,11 @@ export default graphql`
 
   // $xxxはjs側からから受け取る引数
   mutation sample_Mutation($id: Number!, $name: String!) {
-    
+
     // jsから受け取った引数をmutationの引数にセット
-    UpdateUserName(_set: { id: $id, name: $name }) { 
+    UpdateUserName(_set: { id: $id, name: $name }) {
       // mutationの返り値
-      succeed 
+      succeed
     }
   }
 `;
